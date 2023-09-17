@@ -1,0 +1,14 @@
+section {
+  .btnsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+
+    @media (max-width: 720px) {
+      gap: 10px;
+    }
+  }
+}

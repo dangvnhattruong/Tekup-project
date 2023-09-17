@@ -1,0 +1,33 @@
+.container {
+  .grid {
+    padding: 0 300px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @media (max-width: 1700px) {
+      padding: 0 200px;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0 100px;
+    }
+
+    @media (max-width: 720px) {
+      padding: 0 70px;
+    }
+
+    @media (max-width: 450px) {
+      padding: 0 30px;
+    }
+  }
+
+  .gridColumnTablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridColumnMobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
